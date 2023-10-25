@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+  
+<h1>All Developer Skills</h1>
+<ul>
+  <% skills.forEach(skill => { %>
+    <%- include('partials/skillItem', { skill: skill }) %>
+  <% }); %>
+</ul>
+
+
+  </body>
+</html>
